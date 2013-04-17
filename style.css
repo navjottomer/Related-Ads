@@ -1,0 +1,19 @@
+.related_ads h1 { border-bottom:2px solid #f2f2f2; color:#000; font: 20px "Verdana", Arial, Helvetica, sans-serif; }
+.related_ads h1 strong { border-bottom:1px solid #DDD; display:block; font-weight:normal; padding-bottom:7px; }
+
+.related_ads { padding-left:10px; clear:both;  }
+.related_ads h1{ color:#323232;  }
+.related_ads table { clear:both; width:100%; }
+.related_ads table td { border:1px dashed #05699b; padding:8px; vertical-align:top; }
+.related_ads table tr.odd td { background:#f8f8f8; }
+.related_ads table tr:hover td { background:#ecdcdc; }
+.related_ads table td.photo { padding-left:2px; } 
+.related_ads table td.photo img { background:#FFF; border:1px solid #DDD; padding:1px; }
+.related_ads table td.text{width: 560px;}
+.related_ads table td.text h3 { font-size:14px; font-weight:normal; margin-bottom: 4px; }
+.related_ads table td.text h3 a{font-size:14px; text-decoration: none;}
+.related_ads table td.text h4 { color:#000; font-size:11px; font-weight:bold; margin-bottom: 3px; }
+.related_ads table td.text h4 span { color:#CCC; margin:0 5px; }
+.related_ads table td.text p { line-height:16px; }
+.related_ads table td.price { padding-left:25px; }
+.related_ads .see_more_link { font-size:14px; padding:15px 20px 0; text-align:right;}
