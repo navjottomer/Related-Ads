@@ -1,9 +1,9 @@
-<?php
+<?php 
 /*
 Plugin Name: Related Ads
 Plugin URI: http://www.osclass.org
 Description: Display Related ads on Item Page
-Version: 2.1
+Version: 2.2
 Author: Navjot Tomer - nav@tuffclassified.com
 Author URI: http://tuffclassified.org/
 Short Name: related_ads
@@ -15,13 +15,8 @@ function relatedads_call_after_install() {
 	    
         
 	     osc_set_preference('related_ra_numads'    	, '4','related_ads','INTEGER');
-	     osc_set_preference('related_ra_country'    , '0','related_ads','INTEGER');
 	     osc_set_preference('related_ra_category'   , '1','related_ads','INTEGER');
-	     osc_set_preference('related_ra_region'    	, '0','related_ads','INTEGER');
-	     osc_set_preference('related_picOnly'      	, '0','related_ads','INTEGER');
-	     osc_set_preference('related_css'          	, '0','related_ads','INTEGER');
-	     osc_set_preference('related_autoembed'    	, '0','related_ads','INTEGER');
-	     osc_set_preference('related_version'      	, '2.1','related_ads','STRING');
+	     osc_set_preference('related_version'      	, '2.2','related_ads','STRING');
    	 
            }
 
@@ -29,14 +24,8 @@ function relatedads_call_after_install() {
         // Insert here the code you want to execute after the plugin's uninstall
         // for example you might want to drop/remove a table or modify some values
 		 
-				osc_delete_preference('related_ra_numads'  		,'related_ads');
-				osc_delete_preference('related_ra_country'  	,'related_ads');
-				osc_delete_preference('related_ra_category'  	,'related_ads');
-				osc_delete_preference('related_ra_region'  		,'related_ads');
-	            osc_delete_preference('related_picOnly'   		,'related_ads');
-	            osc_delete_preference('related_css'        	 	,'related_ads');
-	            osc_delete_preference('related_autoembed'  		,'related_ads');
-	            osc_delete_preference('related_version'   		,'related_ads');
+				osc_delete_preference('related_ads');
+				
 			}
     
     
@@ -67,7 +56,10 @@ function relatedads_call_after_install() {
     function osc_related_autoembed() {
     	return(osc_get_preference('related_autoembed', 'related_ads')) ;
     }
-// Manual function to show related Ads    	 
+    function osc_related_premiumOnly() {
+    	return(osc_get_preference('related_premiumonly', 'related_ads')) ;
+    }
+//function to show related Ads    	 
 function related_ads_start() {
     $rmItemId = osc_item_id() ;
     $ra_numads = (osc_related_ra_numads() != '') ? osc_related_ra_numads() : '' ;
@@ -75,22 +67,42 @@ function related_ads_start() {
     $region = (osc_related_region() != '') ? osc_related_region() : '' ;
     $category = (osc_related_category() != '') ? osc_related_category() : '' ;
     $picOnly = (osc_related_picOnly() != '') ? osc_related_picOnly() : ''; 
+    $premiumonly = (osc_related_premiumOnly() != '') ? osc_related_premiumOnly() : '';
+    
     $mSearch = new Search() ;
+    
+    //Excluding current item
     $mSearch->dao->where(sprintf("%st_item.pk_i_id <> $rmItemId", DB_TABLE_PREFIX));
+    
+    //Checking if item is premium
+    if($premiumonly ==1){
+    $mSearch->dao->where(sprintf("%st_item.b_premium = 1", DB_TABLE_PREFIX));
+    }
+    
+    //Adding Country as condition
     if($country ==1){
     $mSearch->addCountry(osc_item_country()) ;
     }
+    
+    //Adding Region as condition
     if($region ==1) {
     $mSearch->addRegion(osc_item_region()) ;
     }
+    
+    //Adding Item Category as condition
     if($category ==1) {
     $mSearch->addCategory(osc_item_category_id()) ;
     }
+    
+    //Adding condition for item having pictures
     if($picOnly == 1 ) {
     $mSearch->withPicture(true); //Search only Item which have pictures
     }
+    
+    //limiting number of related ads
     $mSearch->limit(0, $ra_numads) ; // fetch number of ads to show set in preference
     
+    //Searching with all enabled conditions
     $aItems = $mSearch->doSearch();
      
 
@@ -133,13 +145,13 @@ function related_ads_start() {
   			echo '<h3><a href="#">Related Ads</a></h3>
         	<ul> 
         		<li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/admin.php') . '">&raquo; ' . __('Configure',     'related') . '</a></li>
-            <li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/help.php') . '">&raquo; ' . __('Help', 'related') . '</a></li>
+            <li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/help.php') . '">&raquo; ' . __('Help', 'related_ads') . '</a></li>
         </ul>';
 				} else{
   			echo '<li id="related_ads"><h3><a href="#">Related Ads</a></h3>
         	<ul> 
         		<li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/admin.php') . '">&raquo; ' . __('Configure',     'related') . '</a></li>
-            <li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/help.php') . '">&raquo; ' . __('Help', 'related') . '</a></li>
+            <li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/help.php') . '">&raquo; ' . __('Help', 'related_ads') . '</a></li>
         </ul></li>';
 	}
 
@@ -148,10 +160,7 @@ function related_ads_start() {
 	function relatedads_admin() {
         osc_admin_render_plugin(osc_plugin_path(dirname(__FILE__)) . '/admin.php') ;
     }
-    
-    function related_before_url() {
-		 return Params::getParam('page');
-    }      
+          
 
 
     // This is needed in order to be able to activate the plugin
@@ -170,7 +179,5 @@ function related_ads_start() {
     osc_add_hook('item_detail', 'related_ads_auto');
     // Add related ads menu in Dashboard
     osc_add_hook('admin_menu', 'relatedads_admin_menu');
-    // before html 
-    osc_add_hook('before_html', 'related_before_url');
-    
+
 ?>
