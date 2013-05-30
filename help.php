@@ -1,4 +1,4 @@
-<?php
+<?php if (!defined('OC_ADMIN') || OC_ADMIN!==true) exit('Access is not allowed.');
 /*
  *      OSCLass – software for creating and publishing online classified
  *                           advertising platforms
@@ -25,45 +25,45 @@
         <div>
             <fieldset>
 				<legend>
-					<h2><b><?php _e('Related Ads Help', 'related');?></b></h2>
+					<h2><b><?php _e('Related Ads Help', 'related_ads');?></b></h2>
                 </legend>
                 <br />
                 <h3>
-					<?php _e('1.What is Related Ads Plugin?', 'related'); ?>
+					<?php _e('1.What is Related Ads Plugin?', 'related_ads'); ?>
 				</h3>
 				<p>
-                    <?php _e('Related ads plugin is very easy to use plugin which will show latest related ads on Item page and helps you to reduce bounce rate of your classified portal', 'related'); ?>
+                    <?php _e('Related ads plugin is very easy to use plugin which will show latest related ads on Item page and helps you to reduce bounce rate of your classified portal', 'related_ads'); ?>
                 </p>
                 <h3>
-                    <?php _e('2.How does Related Ads plugin work?', 'related'); ?>
+                    <?php _e('2.How does Related Ads plugin work?', 'related_ads'); ?>
                 </h3>
                 <p>
-                    <?php _e('In order to use this plugin, you should enable Auto-embed feature in plugin configuration screen or edit your theme file <b>item.php</b> and add the following line anywhere in the code you want related ads to display.', 'related'); ?>
+                    <?php _e('In order to use this plugin, you should enable Auto-embed feature in plugin configuration screen or edit your theme file <b>item.php</b> and add the following line anywhere in the code you want related ads to display.', 'related_ads'); ?>
                 </p>
                 <pre>
                     &lt;?php if (function_exists('related_ads_start')) {related_ads_start();} ?&gt;
                 </pre>
                 <h3>
-                   <?php _e('3. How can I show related ads with pictures only?','related'); ?>
+                   <?php _e('3. How can I show related ads with pictures only?', 'related_ads'); ?>
                 </h3>
                 <p>
-                   <?php _e(' Set <b>Show ads with pictures only</b> option to Yes ', 'related'); ?>
+                   <?php _e(' Set <b>Show ads with pictures only</b> option to Yes ', 'related_ads'); ?>
                 </p>
                 <h3>
-                   <?php _e('4.How can I change/disable default css for displaying related ads differently?','related'); ?>
+                   <?php _e('4.How can I change/disable default css for displaying related ads differently?', 'related_ads'); ?>
                 </h3>
                 <p>
-                   <?php _e('    You can edit style.css file in related ads plugin directory. ', 'related'); ?>
+                   <?php _e('    You can edit style.css file in related ads plugin directory. ', 'related_ads'); ?>
                 </p>
                 <p>
-                <?php _e('You can also disable default stylesheet in plugin configuration screen and put your custom css in theme stylesheet', 'related'); ?>
+                <?php _e('You can also disable default stylesheet in plugin configuration screen and put your custom css in theme stylesheet', 'related_ads'); ?>
                 </p>
                 <br />
                 <p>
-                   <?php _e('The plugin is tested with OSclass version 2.4 only but can work on other version too.', 'related'); ?>
+                   <?php _e('The plugin is tested with OSclass version 3.0 only but can work on other version too.', 'related_ads'); ?>
                 </p>
                 <p>
-                   <?php _e('Created by Navjot tomer as suggested by Jay with the help of Carousel for OSclass plugin.', 'related'); ?>
+                   <?php _e('Created by Navjot tomer as suggested by Jay with the help of Carousel for OSclass plugin.', 'related_ads'); ?>
                 </p>
             </fieldset>
         </div>
