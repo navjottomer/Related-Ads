@@ -24,17 +24,15 @@
     <div style="padding: 0 20px 20px; margin-top:20px">
         <div>
             <fieldset>
-                
-                <legend>
-                    <h2><?php _e('<b>Related Ads Help</b>', 'related'); ?></h2>
+				<legend>
+					<h2><b><?php _e('Related Ads Help', 'related');?></b></h2>
                 </legend>
                 <br />
-    
                 <h3>
-                    <?php _e('1.What is Related Ads Plugin?', 'related'); ?>
-                </h3>
-                <p>
-                    <?php _e('    Related ads plugin is very easy to use plugin which will show latest related ads on Item page and helps you to reduce bounce rate of your classified portal', 'related'); ?>
+					<?php _e('1.What is Related Ads Plugin?', 'related'); ?>
+				</h3>
+				<p>
+                    <?php _e('Related ads plugin is very easy to use plugin which will show latest related ads on Item page and helps you to reduce bounce rate of your classified portal', 'related'); ?>
                 </p>
                 <h3>
                     <?php _e('2.How does Related Ads plugin work?', 'related'); ?>
