@@ -1,0 +1,218 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Related ads Plugin\n"
+"POT-Creation-Date: 2013-05-30 13:57+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Navjot Tomer <admin@tuffclassified.com>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /Users/navjottomer/related_ads\n"
+
+#: /Users/navjottomer/related_ads/admin.php:88
+msgid "Setting saved successfully"
+msgstr "Ajuste guardado con éxito"
+
+#: /Users/navjottomer/related_ads/admin.php:94
+msgid "Related Ads Preferences"
+msgstr "Anuncios Relacionados Preferencias"
+
+#: /Users/navjottomer/related_ads/admin.php:107
+msgid "Number of related ads  "
+msgstr "Número de anuncios relacionados"
+
+#: /Users/navjottomer/related_ads/admin.php:111
+msgid "Enter how many ads you want to show on Item Page (Default is 4)"
+msgstr ""
+"Entra cuántos anuncios que desea mostrar en el artículo de página (por "
+"defecto es 4)"
+
+#: /Users/navjottomer/related_ads/admin.php:116
+msgid "Show only premium ads"
+msgstr ""
+
+#: /Users/navjottomer/related_ads/admin.php:120
+#: /Users/navjottomer/related_ads/admin.php:132
+#: /Users/navjottomer/related_ads/admin.php:144
+#: /Users/navjottomer/related_ads/admin.php:156
+#: /Users/navjottomer/related_ads/admin.php:168
+#: /Users/navjottomer/related_ads/admin.php:180
+msgid "No"
+msgstr "No"
+
+#: /Users/navjottomer/related_ads/admin.php:121
+#: /Users/navjottomer/related_ads/admin.php:133
+#: /Users/navjottomer/related_ads/admin.php:145
+#: /Users/navjottomer/related_ads/admin.php:157
+#: /Users/navjottomer/related_ads/admin.php:169
+#: /Users/navjottomer/related_ads/admin.php:181
+msgid "Yes"
+msgstr "Sí"
+
+#: /Users/navjottomer/related_ads/admin.php:123
+#, fuzzy
+msgid "Select Yes if you want to show premium ads only"
+msgstr "Seleccione Sí si desea mostrar anuncios sólo con foto"
+
+#: /Users/navjottomer/related_ads/admin.php:128
+msgid "Show ads with pictures only"
+msgstr "Mostrar anuncios con imágenes solamente"
+
+#: /Users/navjottomer/related_ads/admin.php:135
+msgid "Select Yes if you want to show ads with picture only"
+msgstr "Seleccione Sí si desea mostrar anuncios sólo con foto"
+
+#: /Users/navjottomer/related_ads/admin.php:140
+msgid "Show ads with same category"
+msgstr "Mostrar anuncios con misma categoría"
+
+#: /Users/navjottomer/related_ads/admin.php:147
+msgid "Select Yes to Filter ads by Category"
+msgstr "Seleccione Sí para filtrar los anuncios por Categoría"
+
+#: /Users/navjottomer/related_ads/admin.php:152
+msgid "Show ads with same country"
+msgstr "Mostrar anuncios con el mismo país"
+
+#: /Users/navjottomer/related_ads/admin.php:159
+msgid "Select Yes to Filter ads by Country"
+msgstr "Seleccione Sí para filtrar los anuncios por país"
+
+#: /Users/navjottomer/related_ads/admin.php:164
+msgid "Show ads with same region"
+msgstr "Mostrar anuncios con misma región"
+
+#: /Users/navjottomer/related_ads/admin.php:171
+msgid "Select Yes to Filter ads by Region"
+msgstr "Seleccione Sí para filtrar los anuncios por región"
+
+#: /Users/navjottomer/related_ads/admin.php:176
+msgid "Disable default Css "
+msgstr "Desactivar default Css"
+
+#: /Users/navjottomer/related_ads/admin.php:183
+msgid "Select Yes to disable included css and to use your own css"
+msgstr "Seleccione Sí para deshabilitar incluido css y utilizar su propio css"
+
+#: /Users/navjottomer/related_ads/admin.php:188
+msgid "Related Ads AutoEmbed "
+msgstr "Anuncios Relacionados AutoEmbed"
+
+#: /Users/navjottomer/related_ads/admin.php:192
+msgid "Disable"
+msgstr "Inhabilitar"
+
+#: /Users/navjottomer/related_ads/admin.php:193
+msgid "Enable"
+msgstr "Permitir"
+
+#: /Users/navjottomer/related_ads/admin.php:195
+msgid "Choose Enable to Autoembed related ads in your Item page"
+msgstr ""
+"Elija Activar para Autoembed anuncios relacionados en su página del artículo"
+
+#: /Users/navjottomer/related_ads/admin.php:196
+msgid "If you disable this feature than copy this function to your Item Page"
+msgstr ""
+"Si se desactiva esta función de copiar esta función a tu página de artículo"
+
+#: /Users/navjottomer/related_ads/admin.php:204
+msgid "Save Related Ads Settings"
+msgstr "Guardar Anuncios Relacionados Configuración"
+
+#: /Users/navjottomer/related_ads/help.php:28
+msgid "Related Ads Help"
+msgstr "Anuncios Relacionados Ayuda"
+
+#: /Users/navjottomer/related_ads/help.php:32
+msgid "1.What is Related Ads Plugin?"
+msgstr "1.Que se Anuncios Relacionados Programas?"
+
+#: /Users/navjottomer/related_ads/help.php:35
+msgid ""
+"Related ads plugin is very easy to use plugin which will show latest related "
+"ads on Item page and helps you to reduce bounce rate of your classified "
+"portal"
+msgstr ""
+"Anuncios Relacionados plugin es muy fácil de usar plug-in que le mostrará "
+"más anuncios relacionados en la página del artículo y le ayuda a reducir el "
+"porcentaje de abandonos de su portal clasificado"
+
+#: /Users/navjottomer/related_ads/help.php:38
+msgid "2.How does Related Ads plugin work?"
+msgstr "2.Como tiene Anuncios Relacionados obra plugin?"
+
+#: /Users/navjottomer/related_ads/help.php:41
+msgid ""
+"In order to use this plugin, you should enable Auto-embed feature in plugin "
+"configuration screen or edit your theme file <b>item.php</b> and add the "
+"following line anywhere in the code you want related ads to display."
+msgstr ""
+"Para utilizar este plugin, debe activar la función Auto-inserción en "
+"pantalla de configuración del plug-in o editar su archivo de tema <b> item."
+"php </ b> y agregue la siguiente línea en cualquier parte del código que "
+"desee para mostrar anuncios relacionados."
+
+#: /Users/navjottomer/related_ads/help.php:47
+msgid "3. How can I show related ads with pictures only?"
+msgstr "3. ¿Cómo puedo mostrar anuncios relacionados con sólo imágenes?"
+
+#: /Users/navjottomer/related_ads/help.php:50
+msgid " Set <b>Show ads with pictures only</b> option to Yes "
+msgstr " Establecer <b> Ver los anuncios con imágenes solamente </ b> para Sí"
+
+#: /Users/navjottomer/related_ads/help.php:53
+msgid ""
+"4.How can I change/disable default css for displaying related ads "
+"differently?"
+msgstr ""
+"4.How puedo cambiar / desactivar css predeterminado para mostrar anuncios "
+"relacionados con el diferente?"
+
+#: /Users/navjottomer/related_ads/help.php:56
+msgid "    You can edit style.css file in related ads plugin directory. "
+msgstr ""
+"    Puede editar el archivo style.css en los anuncios relacionados con "
+"directorio de plugins."
+
+#: /Users/navjottomer/related_ads/help.php:59
+msgid ""
+"You can also disable default stylesheet in plugin configuration screen and "
+"put your custom css in theme stylesheet"
+msgstr ""
+"También puede desactivar la hoja de estilo predeterminada en la pantalla de "
+"configuración del plugin y poner su hoja de estilo css personalizado en el "
+"tema"
+
+#: /Users/navjottomer/related_ads/help.php:63
+#, fuzzy
+msgid ""
+"The plugin is tested with OSclass version 3.0 only but can work on other "
+"version too."
+msgstr ""
+"El plugin se prueba sólo con la versión 2.4 OSClass pero puede trabajar en "
+"otra versión también."
+
+#: /Users/navjottomer/related_ads/help.php:66
+msgid ""
+"Created by Navjot tomer as suggested by Jay with the help of Carousel for "
+"OSclass plugin."
+msgstr ""
+"Creado por Navjot tomer como sugieren Jay con la ayuda de carrusel para "
+"Programas OSClass."
+
+#: /Users/navjottomer/related_ads/index.php:147
+#: /Users/navjottomer/related_ads/index.php:153
+msgid "Configure"
+msgstr "Configurar"
+
+#: /Users/navjottomer/related_ads/index.php:148
+#: /Users/navjottomer/related_ads/index.php:154
+msgid "Help"
+msgstr "Ayudar"
