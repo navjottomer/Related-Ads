@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Related ads Plugin\n"
-"POT-Creation-Date: 2013-05-30 10:11+0530\n"
+"POT-Creation-Date: 2013-05-30 13:59+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Navjot Tomer <admin@tuffclassified.com>\n"
 "Language-Team: \n"
@@ -15,103 +15,114 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: /Users/navjottomer/related_ads\n"
 
-#: /Users/navjottomer/related_ads/admin.php:68
+#: /Users/navjottomer/related_ads/admin.php:88
 msgid "Setting saved successfully"
 msgstr "Instellen succesvol opgeslagen"
 
-#: /Users/navjottomer/related_ads/admin.php:74
+#: /Users/navjottomer/related_ads/admin.php:94
 msgid "Related Ads Preferences"
 msgstr "Related Ads Preferences"
 
-#: /Users/navjottomer/related_ads/admin.php:87
+#: /Users/navjottomer/related_ads/admin.php:107
 msgid "Number of related ads  "
 msgstr "Aantal gerelateerde advertenties"
 
-#: /Users/navjottomer/related_ads/admin.php:91
+#: /Users/navjottomer/related_ads/admin.php:111
 msgid "Enter how many ads you want to show on Item Page (Default is 4)"
 msgstr ""
 "Voer het aantal advertenties die u wilt weergeven op de pagina (standaard is "
 "4)"
 
-#: /Users/navjottomer/related_ads/admin.php:96
-msgid "Show ads with pictures only"
-msgstr "Toon advertenties met foto's alleen"
+#: /Users/navjottomer/related_ads/admin.php:116
+msgid "Show only premium ads"
+msgstr ""
 
-#: /Users/navjottomer/related_ads/admin.php:100
-#: /Users/navjottomer/related_ads/admin.php:112
-#: /Users/navjottomer/related_ads/admin.php:124
-#: /Users/navjottomer/related_ads/admin.php:136
-#: /Users/navjottomer/related_ads/admin.php:148
+#: /Users/navjottomer/related_ads/admin.php:120
+#: /Users/navjottomer/related_ads/admin.php:132
+#: /Users/navjottomer/related_ads/admin.php:144
+#: /Users/navjottomer/related_ads/admin.php:156
+#: /Users/navjottomer/related_ads/admin.php:168
+#: /Users/navjottomer/related_ads/admin.php:180
 msgid "No"
 msgstr "Geen"
 
-#: /Users/navjottomer/related_ads/admin.php:101
-#: /Users/navjottomer/related_ads/admin.php:113
-#: /Users/navjottomer/related_ads/admin.php:125
-#: /Users/navjottomer/related_ads/admin.php:137
-#: /Users/navjottomer/related_ads/admin.php:149
+#: /Users/navjottomer/related_ads/admin.php:121
+#: /Users/navjottomer/related_ads/admin.php:133
+#: /Users/navjottomer/related_ads/admin.php:145
+#: /Users/navjottomer/related_ads/admin.php:157
+#: /Users/navjottomer/related_ads/admin.php:169
+#: /Users/navjottomer/related_ads/admin.php:181
 msgid "Yes"
 msgstr "Ja"
 
-#: /Users/navjottomer/related_ads/admin.php:103
+#: /Users/navjottomer/related_ads/admin.php:123
+#, fuzzy
+msgid "Select Yes if you want to show premium ads only"
+msgstr "Selecteer Ja als u wilt om advertenties te tonen met slechts picture"
+
+#: /Users/navjottomer/related_ads/admin.php:128
+msgid "Show ads with pictures only"
+msgstr "Toon advertenties met foto's alleen"
+
+#: /Users/navjottomer/related_ads/admin.php:135
 msgid "Select Yes if you want to show ads with picture only"
 msgstr "Selecteer Ja als u wilt om advertenties te tonen met slechts picture"
 
-#: /Users/navjottomer/related_ads/admin.php:108
+#: /Users/navjottomer/related_ads/admin.php:140
 msgid "Show ads with same category"
 msgstr "Toon advertenties met dezelfde categorie"
 
-#: /Users/navjottomer/related_ads/admin.php:115
+#: /Users/navjottomer/related_ads/admin.php:147
 msgid "Select Yes to Filter ads by Category"
 msgstr "Selecteer Ja om Filter advertenties per categorie"
 
-#: /Users/navjottomer/related_ads/admin.php:120
+#: /Users/navjottomer/related_ads/admin.php:152
 msgid "Show ads with same country"
 msgstr "Toon advertenties met hetzelfde land"
 
-#: /Users/navjottomer/related_ads/admin.php:127
+#: /Users/navjottomer/related_ads/admin.php:159
 msgid "Select Yes to Filter ads by Country"
 msgstr "Selecteer Ja om Filter advertenties per land"
 
-#: /Users/navjottomer/related_ads/admin.php:132
+#: /Users/navjottomer/related_ads/admin.php:164
 msgid "Show ads with same region"
 msgstr "Toon advertenties met dezelfde regio"
 
-#: /Users/navjottomer/related_ads/admin.php:139
+#: /Users/navjottomer/related_ads/admin.php:171
 msgid "Select Yes to Filter ads by Region"
 msgstr "Selecteer Ja om Filter advertenties per regio"
 
-#: /Users/navjottomer/related_ads/admin.php:144
+#: /Users/navjottomer/related_ads/admin.php:176
 msgid "Disable default Css "
 msgstr "Schakel standaard Css"
 
-#: /Users/navjottomer/related_ads/admin.php:151
+#: /Users/navjottomer/related_ads/admin.php:183
 msgid "Select Yes to disable included css and to use your own css"
 msgstr "Selecteer Ja om disable opgenomen css en uw eigen css gebruiken"
 
-#: /Users/navjottomer/related_ads/admin.php:156
+#: /Users/navjottomer/related_ads/admin.php:188
 msgid "Related Ads AutoEmbed "
 msgstr "Verwante advertenties AutoEmbed"
 
-#: /Users/navjottomer/related_ads/admin.php:160
+#: /Users/navjottomer/related_ads/admin.php:192
 msgid "Disable"
 msgstr "Onbruikbaar maken"
 
-#: /Users/navjottomer/related_ads/admin.php:161
+#: /Users/navjottomer/related_ads/admin.php:193
 msgid "Enable"
 msgstr "In staat stellen"
 
-#: /Users/navjottomer/related_ads/admin.php:163
+#: /Users/navjottomer/related_ads/admin.php:195
 msgid "Choose Enable to Autoembed related ads in your Item page"
 msgstr ""
 "Kies Inschakelen om gerelateerde advertenties Autoembed in uw pagina Object"
 
-#: /Users/navjottomer/related_ads/admin.php:164
+#: /Users/navjottomer/related_ads/admin.php:196
 msgid "If you disable this feature than copy this function to your Item Page"
 msgstr ""
 "Als u deze functie deze functie uit te schakelen dan kopiëren naar uw pagina"
 
-#: /Users/navjottomer/related_ads/admin.php:172
+#: /Users/navjottomer/related_ads/admin.php:204
 msgid "Save Related Ads Settings"
 msgstr "Opslaan Verwante advertenties Instellingen"
 
@@ -179,8 +190,9 @@ msgstr ""
 "en zet uw aangepaste css in thema stylesheet"
 
 #: /Users/navjottomer/related_ads/help.php:63
+#, fuzzy
 msgid ""
-"The plugin is tested with OSclass version 2.4 only but can work on other "
+"The plugin is tested with OSclass version 3.0 only but can work on other "
 "version too."
 msgstr ""
 "De plugin is getest met slechts OSclass versie 2.4, maar kan ook werken op "
@@ -194,12 +206,12 @@ msgstr ""
 "Gemaakt door Navjot tomer zoals voorgesteld door Jay met de hulp van "
 "Carrousel voor OSclass plugin."
 
-#: /Users/navjottomer/related_ads/index.php:135
-#: /Users/navjottomer/related_ads/index.php:141
+#: /Users/navjottomer/related_ads/index.php:147
+#: /Users/navjottomer/related_ads/index.php:153
 msgid "Configure"
 msgstr "Configureren"
 
-#: /Users/navjottomer/related_ads/index.php:136
-#: /Users/navjottomer/related_ads/index.php:142
+#: /Users/navjottomer/related_ads/index.php:148
+#: /Users/navjottomer/related_ads/index.php:154
 msgid "Help"
 msgstr "Help"
