@@ -3,7 +3,7 @@
 Plugin Name: Related Ads
 Plugin URI: http://www.osclass.org
 Description: Display Related ads on Item Page
-Version: 2.2
+Version: 2.2.1
 Author: Navjot Tomer - nav@tuffclassified.com
 Author URI: http://tuffclassified.org/
 Short Name: related_ads
@@ -139,23 +139,8 @@ function related_ads_start() {
    	echo '<link href="' . osc_base_url() . "oc-content/plugins/related_ads/style.css" . '" rel="stylesheet" type="text/css" />';
 		}
 	}
+	osc_add_admin_submenu_page('settings',__('Related Ads', 'related_ads'), osc_admin_render_plugin_path(dirname(__FILE__)) . '/admin.php'), 'settings_related_ads');
 
-	function relatedads_admin_menu() {
-        if( OSCLASS_VERSION < '2.4.0') {
-  			echo '<h3><a href="#">Related Ads</a></h3>
-        	<ul> 
-        		<li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/admin.php') . '">&raquo; ' . __('Configure',     'related') . '</a></li>
-            <li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/help.php') . '">&raquo; ' . __('Help', 'related_ads') . '</a></li>
-        </ul>';
-				} else{
-  			echo '<li id="related_ads"><h3><a href="#">Related Ads</a></h3>
-        	<ul> 
-        		<li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/admin.php') . '">&raquo; ' . __('Configure',     'related') . '</a></li>
-            <li><a href="' . osc_admin_render_plugin_url(osc_plugin_path(dirname(__FILE__)) . '/help.php') . '">&raquo; ' . __('Help', 'related_ads') . '</a></li>
-        </ul></li>';
-	}
-
-    } 
     
 	function relatedads_admin() {
         osc_admin_render_plugin(osc_plugin_path(dirname(__FILE__)) . '/admin.php') ;
