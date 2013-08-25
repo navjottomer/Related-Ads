@@ -3,7 +3,7 @@
 Plugin Name: Related Ads
 Plugin URI: http://www.osclass.org
 Description: Display Related ads on Item Page
-Version: 2.2.1
+Version: 2.2.2
 Author: Navjot Tomer - nav@tuffclassified.com
 Author URI: http://tuffclassified.org/
 Short Name: related_ads
@@ -16,7 +16,7 @@ function relatedads_call_after_install() {
         
 	     osc_set_preference('related_ra_numads'    	, '4','related_ads','INTEGER');
 	     osc_set_preference('related_ra_category'   , '1','related_ads','INTEGER');
-	     osc_set_preference('related_version'      	, '2.2','related_ads','STRING');
+	     osc_set_preference('related_version'      	, '2.2.2','related_ads','STRING');
    	 
            }
 
@@ -139,13 +139,16 @@ function related_ads_start() {
    	echo '<link href="' . osc_base_url() . "oc-content/plugins/related_ads/style.css" . '" rel="stylesheet" type="text/css" />';
 		}
 	}
-	osc_add_admin_submenu_page('settings',__('Related Ads', 'related_ads'), osc_admin_render_plugin_path(dirname(__FILE__)) . '/admin.php'), 'settings_related_ads');
-
-    
+	    
 	function relatedads_admin() {
         osc_admin_render_plugin(osc_plugin_path(dirname(__FILE__)) . '/admin.php') ;
     }
-          
+    function related_admin_menu(){
+	osc_admin_menu_plugins('Related Ads', osc_admin_render_plugin_url('related_ads/admin.php'), 'related-ads-submenu');
+	}
+
+	//Adding sub menu to plugins menu in dashboard
+ 	osc_add_hook('admin_menu_init','related_admin_menu');      
 
 
     // This is needed in order to be able to activate the plugin
