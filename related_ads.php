@@ -23,7 +23,7 @@
                                             <?php } ?>
                                              <td class="text">
                                                  <h3><a href="<?php echo osc_item_url() ; ?>"><?php echo osc_item_title() ; ?></a></h3>
-                                                 <p><strong> <a href="/index.php?page=search&sRegion&sCity=<?php  echo osc_item_city(); ?>"><?php  echo osc_item_city(); ?></a>  <?php echo osc_item_category(); ?></strong></p>
+                                                 <p><strong> <a href="<?php echo osc_base_url(true);?>?page=search&sRegion&sCity=<?php  echo osc_item_city(); ?>"><?php  echo osc_item_city(); ?></a>  <?php echo osc_item_category(); ?></strong></p>
                                                  <p><?php echo osc_highlight( strip_tags( osc_item_description() ) ) ; ?></p>
                                              </td>                                       
                                          </tr>
